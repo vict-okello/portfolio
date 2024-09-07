@@ -7,8 +7,7 @@ function Header() {
   return (
     <header className="bg-slate-700 text-white shadow-md p-5">
       <div className="container mx-auto flex justify-between items-center">
-        {/* MyLogo */}
-        <Link to="/" className="text-2xl font-bold ">
+        <Link to="/" className="text-2xl font-bold">
           VictorOkello
         </Link>
 
@@ -46,14 +45,6 @@ function Header() {
             Home
           </NavLink>
           <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? 'text-gray-200 font-bold' : 'hover:text-gray-300'
-            }
-          >
-            About
-          </NavLink>
-          <NavLink
             to="/services"
             className={({ isActive }) =>
               isActive ? 'text-gray-200 font-bold' : 'hover:text-gray-300'
@@ -84,15 +75,6 @@ function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? 'text-gray-200 font-bold' : 'hover:text-gray-300'
-              }
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About
             </NavLink>
             <NavLink
               to="/services"
